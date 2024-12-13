@@ -132,9 +132,7 @@ jobs:
           artifact_dir="${GITHUB_WORKSPACE}/artifacts"
           echo "artifact_dir=$artifact_dir" >> $GITHUB_OUTPUT
           mkdir "$artifact_dir"
-          echo \"=======DEBUG CONFIG FILE======="
           cat "$configfile"
-          echo "=======DEBUG CONFIG FILE END======="
           test "$MIRYOKU_DEBUG" = 'MIRYOKU_DEBUG_TRUE' && cp "$configfile" "$artifact_dir"
 
           if [ -n "${{ matrix.kconfig }}" -a "${{ matrix.kconfig }}" != 'default' ]
