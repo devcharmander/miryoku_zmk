@@ -12,5 +12,5 @@ jobs:
       shield: '["corne_left nice_view_adapter nice_view","corne_right nice_view_adapter nice_view"]'
       alphas: '["QWERTY"]'
       nav: '["vi"]'
-      custom_config: "[#define MIRYOKU_CLIPBOARD_MAC]"
+      custom_config: '["#define MIRYOKU_CLIPBOARD_MAC"]'
       extra: '["WORKMAN"]'
